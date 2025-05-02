@@ -7,7 +7,7 @@
     --secondary-color: #c84524;     /* Secondary background */
     --text-color: #ffffff;          /* Main text color */
     --heading-color: #ffffff;        /* Socials, Headers */
-    --background-color: #000000;        /* Overall background */
+    --background-color: #b72525;        /* Overall background */
     --nav-background: rgb(255, 255, 255); /*Nav background*/
 
 }
@@ -152,9 +152,9 @@ body header.fixed-top { /* Increased specificity */
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #000000d5 !important; /* Semi-transparent red when sticky */
+    background-color: #b72525 !important; /* Semi-transparent red when sticky -------------------------------------------------------------------------*/
     z-index: 100;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.442);
 }
 
 /*----- Header Menu
@@ -490,6 +490,7 @@ body.nav-active .nav__list-item:nth-child(10) {
 #billboard {
     width: 100%;
     overflow: hidden; /* To contain the banner */
+    padding-top:85px;
 }
 
 .banner-container {
