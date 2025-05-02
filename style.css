@@ -4,7 +4,7 @@
 :root {
     --primary-color: #00ac0b;       /* Main accent color */
     --primary-dark: #5b878a;
-    --secondary-color: #ea3103;     /* Secondary background */
+    --secondary-color: #c84524;     /* Secondary background */
     --text-color: #ffffff;          /* Main text color */
     --heading-color: #ffffff;        /* Socials, Headers */
     --background-color: #b72525;        /* Overall background */
@@ -143,7 +143,7 @@ a:hover {
 
 
 header {
-    background-color: rgb(209, 150, 0) !important; /* Start as opaque red */
+    background-color: rgb(0, 7, 224) !important; /* Start as opaque red */
     transition: background-color 0.3s ease-in-out; /* Smooth transition */
 }
 
@@ -152,7 +152,7 @@ body header.fixed-top { /* Increased specificity */
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgb(86, 0, 13) !important; /* Semi-transparent red when sticky */
+    background-color: #000000d5 !important; /* Semi-transparent red when sticky */
     z-index: 100;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -485,3 +485,39 @@ body.nav-active .nav__list-item:nth-child(10) {
     -webkit-transition-delay: 1.7s;
     transition-delay: 1.7s;
 }
+
+/* BILLBOARD */
+#billboard {
+    width: 100%;
+    overflow: hidden; /* To contain the banner */
+}
+
+.banner-container {
+    position: relative; /* To position the text overlay */
+    width: 100%; /* Full width of the billboard */
+    height: auto; /* Maintain aspect ratio if needed, or set a fixed height */
+}
+
+.banner-image {
+    display: block; /* Remove any default inline spacing */
+    width: 100%; /* Make the image fill the width of the container */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Or object-fit: contain; as discussed before */
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white; /* Adjust text color */
+    /* Add other text styling as needed */
+}
+
+/* Optional: Adjust height for different screen sizes if you don't rely solely on aspect ratio */
+/* @media (max-width: 767px) {
+    .banner-container {
+        height: 300px; /* Example fixed height for mobile */
+    }
+} */
