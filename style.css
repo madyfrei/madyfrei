@@ -102,34 +102,6 @@ a:hover {
     color: var(--heading-color);
 }
 
-/* Billboard */
-#billboard .text-content {
-    position: absolute;
-    left: calc(-40vw / 2);
-    top: 25vh;
-    max-width: 520px;
-    z-index: 2;
-}
-
-@media screen and (max-width:767px) {
-    #billboard .text-content {
-        position: relative;
-        left: 0;
-        top: 0;
-        margin-top: 130px;
-        margin-bottom: 40px;
-    }
-
-    .contact-detail {
-        overflow: hidden;
-    }
-
-    .contact-image {
-        margin-bottom: 0;
-        margin-top: 0;
-    }
-
-}
 
 
 .unique-dates-image {
@@ -225,7 +197,7 @@ body header.fixed-top { /* Increased specificity */
 /* menu btn close */
 .menu-btn-close {
     position: absolute;
-    top: 30px;
+    top: 10%;
     right: -97vw;
     display: none;
 }
@@ -495,26 +467,22 @@ body.nav-active .nav__list-item:nth-child(10) {
     transition-delay: 1.7s;
 }
 
-/* BILLBOARD */
-#billboard {
-    
-    width: 100%;
-    overflow: hidden; /* To contain the banner */
-    padding-top:0px;
-}
 
 .banner-container {
-    margin-top: 60px; /* Match the navbar height */
+    margin-top: 120px; /* Match the navbar height */
     position: relative; /* To position the text overlay */
     width: 100%; /* Full width of the billboard */
     height: auto; /* Maintain aspect ratio if needed, or set a fixed height */
+    p
 }
 
 .banner-image {
+    margin-top: 120px;
     display: block; /* Remove any default inline spacing */
     width: 100%; /* Make the image fill the width of the container */
     height: auto; /* Maintain aspect ratio */
     object-fit: cover; /* Or object-fit: contain; as discussed before */
+    
 }
 
 .banner-text {
