@@ -12,6 +12,8 @@
 
 }
 
+
+
 body {
     --bs-body-font-family: "Mulish", Roboto, sans-serif;
     --bs-body-font-size: 1rem;
@@ -165,18 +167,21 @@ body header.fixed-top { /* Increased specificity */
 
 #menu-toggle:checked~.menu-btn>span {
     transform: rotate(45deg);
+    
 }
 
 #menu-toggle:checked~.menu-btn>span::before {
     top: 0;
     transform: rotate(0);
-    background: #fff;
+    background: #ffffff;
+    
 }
 
 #menu-toggle:checked~.menu-btn>span::after {
     top: 0;
     transform: rotate(90deg);
-    background: #fff;
+    background: #ffffff;
+    
 }
 
 #menu-toggle:checked~.navmenu {
@@ -192,6 +197,7 @@ body header.fixed-top { /* Increased specificity */
     cursor: pointer;
     margin: 0 20px 0 40px;
     padding-top: 8px;
+    color: #fff;
 }
 
 .menu-btn>span,
@@ -201,8 +207,9 @@ body header.fixed-top { /* Increased specificity */
     position: absolute;
     width: 100%;
     height: 2px;
-    background-color: var(--bs-dark);
+    background-color: var(--bs-light);
     transition-duration: .25s;
+    
 }
 
 .menu-btn>span::before {
@@ -244,6 +251,8 @@ body header.fixed-top { /* Increased specificity */
     transform: rotate(90deg);
 }
 
+
+
 /*----- Nav Sidebar
 --------------------------------------------------------------*/
 .nav-overlay {
@@ -258,7 +267,7 @@ body header.fixed-top { /* Increased specificity */
     top: 0;
     width: 100vw;
     height: 100vh;
-    background: rgba(10, 10, 10, 0.8);
+    background: rgb(230, 40, 11);
     border-bottom-left-radius: 200%;
     z-index: -1;
     -webkit-transition: -webkit-transform cubic-bezier(0.77, 0, 0.175, 1) 0.6s, border-radius linear 0.8s;
@@ -270,7 +279,7 @@ body header.fixed-top { /* Increased specificity */
 }
 
 .nav-overlay:after {
-    background: rgba(10, 10, 10, 1);
+    background: rgb(214, 91, 14);
     -webkit-transition-delay: 0s;
     transition-delay: 0s;
 }
@@ -488,12 +497,14 @@ body.nav-active .nav__list-item:nth-child(10) {
 
 /* BILLBOARD */
 #billboard {
+    
     width: 100%;
     overflow: hidden; /* To contain the banner */
-    padding-top:85px;
+    padding-top:0px;
 }
 
 .banner-container {
+    margin-top: 60px; /* Match the navbar height */
     position: relative; /* To position the text overlay */
     width: 100%; /* Full width of the billboard */
     height: auto; /* Maintain aspect ratio if needed, or set a fixed height */
@@ -520,5 +531,9 @@ body.nav-active .nav__list-item:nth-child(10) {
 /* @media (max-width: 767px) {
     .banner-container {
         height: 300px; /* Example fixed height for mobile */
+
+.navbar-brand {
+    /* Add any existing styles for your logo container here */
+    padding: 1px 1px; /* Example default padding (adjust as needed) */
+    /* ... other styles ... */
     }
-} */
